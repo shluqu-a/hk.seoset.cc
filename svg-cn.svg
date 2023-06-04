@@ -1,0 +1,17 @@
+<svg width="80" height="90" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <path fill="#FF0" d="m0,-1l0.588,1.809l-1.54,-1.118l1.904,0l-1.54,1.118l0.588,-1.809z" id="a"/>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <g stroke="null" id="svg_7">
+   <path stroke="null" id="svg_1" d="m0,0l80,0l0,48.68421l-80,0l0,-48.68421z" fill="#EE1C25"/>
+   <use stroke="null" id="svg_2" transform="matrix(8 0 0 7.30263 13.3333 12.1711)" xlink:href="#a"/>
+   <use stroke="null" id="svg_3" transform="matrix(2.45402 0.952529 -1.04349 2.2401 26.6664 4.8681)" xlink:href="#a"/>
+   <use stroke="null" id="svg_4" transform="matrix(1.85677 1.74718 -1.91403 1.69491 32 9.73766)" xlink:href="#a"/>
+   <use stroke="null" id="svg_5" transform="matrix(0.914459 2.28661 -2.50497 0.834744 32.0002 17.0409)" xlink:href="#a"/>
+   <use stroke="null" id="svg_6" transform="matrix(2.49517 0.858842 -0.940858 2.27767 26.667 21.9085)" xlink:href="#a"/>
+  </g>
+  <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" id="svg_8" y="79.60526" x="0.78947" stroke-width="0" stroke="#000" fill="#ffffff">中    文</text>
+ </g>
+</svg>
