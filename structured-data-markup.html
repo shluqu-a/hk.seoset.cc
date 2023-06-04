@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>谷歌seo之結構化數據標記重要性</title>
+    <meta name="description" content="Google搜索中結構化數據標記是一種可以通過向網頁添加特定的標記，來幫助搜索引擎更好地理解網頁內容的技術。谷歌藉助這些標記來生成富媒體搜索結果，如答案卡片、價格比較工具、電影評價等等。">
+    <meta name="keywords" content="Google搜索,結構化數據標記,谷歌seo,Google搜索">
+    <!--================= Favicon =================-->
+    <link rel="icon" sizes="16x16" type="image/png" href="static/css/logo.png">
+    <!--================= Magnific Popup CSS =================-->
+    <link rel="stylesheet" href="static/css/magnific.popup.css">
+    <!--================= Base CSS =================-->
+    <link rel="stylesheet" href="static/css/base.css">
+    <!--================= Inline CSS =================-->
+    <link rel="stylesheet" href="static/css/inline.css">
+    <!--================= Fontello CSS =================-->
+    <link rel="stylesheet" href="static/css/fontello.css">
+    <!--================= Widgets CSS =================-->
+    <link rel="stylesheet" href="static/css/widgets.css">
+    <!--================= Swiper CSS =================-->
+    <link rel="stylesheet" href="static/css/swiper.css">
+    <!--================= Style CSS =================-->
+    <link rel="stylesheet" href="static/css/style.css">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [{
+                "@type": "Question",
+                "name": "什麼是結構化數據標記？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "<p>結構化數據標記是一種將網頁內容以半結構化和標準化格式呈現給搜索引擎的技術。它使用 schema.org 和其他規範來為圖書、產品、企業地址、評分等信息提供詳細的描述。結構化數據標記可以幫助搜索引擎理解你的網站，並更好地顯示出來。</p>"
+                }
+            }, {
+                "@type": "Question",
+                "name": "結構化數據標記對 SEO 的影響是什麼？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "<p>結構化數據標記不是直接用於排名或搜索引擎優化的算法，但它可以幫助搜索引擎更好地理解你發佈的內容，並在搜索結果頁面上更合適地呈現。如果正確地使用結構化數據標記，可以增加點擊率和流量，提高用戶滿意度並提升品牌知名度。</p>"
+                }
+            }, {
+                "@type": "Question",
+                "name": "如何實現結構化數據標記？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "<p>在網頁上實現結構化數據標記需要使用一些 HTML 標籤和屬性，如 itemtype、itemid、itemprop 和 itemscope 等。你可以通過手動編寫代碼或使用插件/工具來添加這些標記。谷歌提供了一個名為 Structured Data Testing Tool 的免費工具，用於檢查和測試結構化數據標記是否正確。</p>"
+                }
+            }, {
+                "@type": "Question",
+                "name": "是否每個頁面都需要結構化數據標記？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "<p>並非每個頁面都需要結構化數據標記，但對於包含詳細信息的頁面（如產品、評論等）或者企業地址 / 聯繫方式等頁面，結構化數據標記是非常有幫助的。總體而言，如果你想讓搜索引擎更好地理解你的網站，並在搜索結果頁面上呈現更詳細的信息，那麼添加結構化數據標記通常是值得的。</p>"
+                }
+            }]
+        }
+    </script>
+</head>
+
+<body>
+    <!--================= Header One Start =================-->
+    <!--================= Sticky Menu Start Here =================-->
+    <div class="xoxo_fn_stickynav ajax_enable">
+        <div class="progress"></div>
+        <div class="container">
+            <div class="transform_hedaer">
+                <div class="sticky_header">
+                    <div class="xoxo_fn_nav sticky_nav">
+                        <div class="menu">
+                            <div class="menu-main-menu-container">
+                                <ul class="xoxo_fn_main_nav">
+                                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-117 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor  menu-item-130">
+                                        <a href="https://hk.seoset.cc">
+                                            <span>
+											<span>首頁</span>
+                                            <span class="suffix">//</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children">
+                                        <a href="https://hk.seoset.cc">
+                                            <span>
+											<span>谷歌SEO</span>
+                                            <span class="suffix">//</span>
+                                            </span>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item"><a href="quick-home.html"><span><span>如何快速排名</span><span class="suffix">//</span></span></a></li>
+                                            <li class="menu-item"><a href="google-quick-queue.html"><span><span>3個快速排名的要素</span><span class="suffix">//</span></span></a></li>
+                                            <li class="menu-item"><a href="googleseo-post.html"><span><span>谷歌seo入門</span><span class="suffix">//</span></span></a></li>
+                                            <li class="menu-item"><a href="google-website.html"><span><span>適合谷歌seo獨立站</span><span class="suffix">//</span></span></a></li>
+                                            <li class="menu-item"><a href="quote-post.html"><span><span>關鍵詞研究</span><span class="suffix">//</span></span></a></li>
+                                            <li class="menu-item"><a href="create-high-quality-content.html"><span><span>創建高質量內容</span><span class="suffix">//</span></span></a></li>
+                                            <li class="menu-item"><a href="structured-data-markup.html"><span><span>結構化數據標記</span><span class="suffix">//</span></span></a></li>
+                                            <li class="menu-item"><a href="keywords-post.html"><span><span>谷歌seo常見術語</span><span class="suffix">//</span></span></a></li>
+                                            <li class="menu-item"><a href="google-seo-title.html"><span><span>寫好Google SEO標題</span><span class="suffix">//</span></span></a></li>
+                                            <li class="menu-item"><a href="google-seo-included.html"><span><span>收錄量≠流量</span><span class="suffix">//</span></span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children">
+                                        <a href="google-seo-basics.html">
+                                            <span>
+											<span>谷歌seo基礎知識</span>
+                                            <span class="suffix">//</span>
+                                            </span>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item"><a href="what-is-google-seo.html"><span><span>什麼是谷歌seo？</span><span class="suffix">//</span></span></a></li>
+                                            <li class="menu-item"><a href="what-is-long-tail-keywords.html"><span><span>什麼是長尾關鍵詞？</span><span class="suffix">//</span></span></a></li>
+                                            <li class="menu-item"><a href="what-is-seo-optimization-tool.html"><span><span>什麼是谷歌seo工具？</span><span class="suffix">//</span></span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children">
+                                        <a href="factor-post.html">
+                                            <span>
+											<span>谷歌SEO合作(價錢)</span>
+                                            <span class="suffix">//</span>
+                                            </span>
+                                        </a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item"><a href="factor-post.html"><span><span>谷歌seo方案（服務）</span><span class="suffix">//</span></span></a></li>
+                                            <li class="menu-item"><a href="google-ads-post.html"><span><span>谷歌廣告代投（服務）</span><span class="suffix">//</span></span></a></li>
+                                            <li class="menu-item"><a href="external-link.html"><span><span>英文外鏈（服務）</span><span class="suffix">//</span></span></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--================= Sticky Menu End Here =================-->
+
+
+
+    <!--================= Header Start Here =================-->
+    <header id="xoxo_fn_header">
+        <div class="xoxo_fn_header">
+            <div class="container">
+                <!--================= Nav Start =================-->
+                <div class="header_bottom">
+                    <div class="bottom_fixer">
+                        <div class="logo">
+                            <a href="https://hk.seoset.cc">
+                                <img class="retina_logo" src="static/picture/logo.png" alt="logo">
+                                <img class="desktop_logo" src="static/picture/logo.png" alt="logo">
+                            </a>
+                        </div>
+                        <div class="xoxo_fn_nav main_nav">
+                            <span class="wing"></span>
+                            <div class="menu">
+                                <div class="menu-main-menu-container">
+                                    <ul id="menu-main-menu" class="xoxo_fn_main_nav">
+                                        <li class="menu-item ">
+                                            <a href="https://hk.seoset.cc">
+                                                <span>
+                                                <span>首頁</span>
+                                                <span class="suffix">//</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item menu-item-has-children">
+                                            <a href="https://hk.seoset.cc">
+                                                <span>
+                                                <span>谷歌seo</span>
+                                                <span class="suffix">//</span>
+                                                </span>
+                                            </a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item"><a href="quick-home.html"><span><span>快速排名</span><span class="suffix">//</span></span></a></li>
+                                                <li class="menu-item"><a href="google-quick-queue.html"><span><span>3個快速排名的要素</span><span class="suffix">//</span></span></a></li>
+                                                <li class="menu-item"><a href="googleseo-post.html"><span><span>谷歌seo入門</span><span class="suffix">//</span></span></a></li>
+                                                <li class="menu-item"><a href="google-website.html"><span><span>適合谷歌seo獨立站</span><span class="suffix">//</span></span></a></li>
+                                                <li class="menu-item"><a href="quote-post.html"><span><span>關鍵詞研究</span><span class="suffix">//</span></span></a></li>
+                                                <li class="menu-item"><a href="create-high-quality-content.html"><span><span>創建高質量內容</span><span class="suffix">//</span></span></a></li>
+                                                <li class="menu-item"><a href="structured-data-markup.html"><span><span>結構化數據標記</span><span class="suffix">//</span></span></a></li>
+                                                <li class="menu-item"><a href="keywords-post.html"><span><span>谷歌seo常見術語</span><span class="suffix">//</span></span></a></li>
+                                                <li class="menu-item"><a href="google-seo-title.html"><span><span>寫好Google SEO標題</span><span class="suffix">//</span></span></a></li>
+                                                <li class="menu-item"><a href="google-seo-included.html"><span><span>收錄量≠流量</span><span class="suffix">//</span></span></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item menu-item-has-children">
+                                            <a href="google-seo-basics.html">
+                                                <span>
+                                                <span>谷歌seo基礎知識</span>
+                                                <span class="suffix">//</span>
+                                                </span>
+                                            </a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item"><a href="what-is-google-seo.html"><span><span>什麼是谷歌seo？</span><span class="suffix">//</span></span></a></li>
+                                                <li class="menu-item"><a href="what-is-long-tail-keywords.html"><span><span>什麼是長尾關鍵詞？</span><span class="suffix">//</span></span></a></li>
+                                                <li class="menu-item"><a href="what-is-seo-optimization-tool.html"><span><span>什麼是谷歌seo工具？</span><span class="suffix">//</span></span></a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item menu-item-has-children">
+                                            <a href="factor-post.html">
+                                                <span>
+                                                <span>谷歌SEO合作(價錢)</span>
+                                                <span class="suffix">//</span>
+                                                </span>
+                                            </a>
+                                            <ul class="sub-menu">
+                                                <li class="menu-item"><a href="factor-post.html"><span><span>谷歌seo方案（服務）</span><span class="suffix">//</span></span></a></li>
+                                                <li class="menu-item"><a href="google-ads-post.html"><span><span>谷歌廣告代投（服務）</span><span class="suffix">//</span></span></a></li>
+                                                <li class="menu-item"><a href="external-link.html"><span><span>英文外鏈（服務）</span><span class="suffix">//</span></span></a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="more">
+                                    <a href="#">
+                                        <span>More...</span>
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <!-- Comes from JS -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--================= Nav End =================-->
+            </div>
+        </div>
+    </header>
+    <!--================= Header End Here =================-->
+    <!--================= Header One End =================-->
+
+    <!--================= Mobile Menu Start =================-->
+    <!--================= Mobile Menu Start Here =================-->
+    <div class="xoxo_fn_mobnav">
+        <div class="mob_top">
+            <div class="logo">
+                <div class="fn_logo">
+                    <a href="https://hk.seoset.cc">
+                        <img class="mobile_logo" src="static/picture/mobile-logo.png" alt="logo">
+                    </a>
+                </div>
+            </div>
+            <div class="right__triggerr">
+                <a class="mobmenu_opener" href="#">
+                    <span><span></span></span>
+                </a>
+            </div>
+        </div>
+        <div class="mob_bot" style="display: none;">
+            <div class="menu-main-menu-container">
+                <ul id="menu-main-menu-1" class="mobile_menu">
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-117 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor  menu-item-130">
+                        <a href="https://hk.seoset.cc">
+                            <span>
+                            <span>首頁</span>
+                            <span class="suffix">//</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="menu-item menu-item-type-custom menu-item-has-children menu-item-object-custom  menu-item-8">
+                        <a href="https://hk.seoset.cc">
+                            <span>
+                            <span>谷歌SEO</span>
+                            <span class="suffix">//</span>
+                            </span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-158">
+                                <a href="quick-home.html">
+                                    <span>
+                                    <span>快速排名</span>
+                                    <span class="suffix">//</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-158">
+                                <a href="google-quick-queue.html">
+                                    <span>
+                                    <span>3個快速排名的要素</span>
+                                    <span class="suffix">//</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-158">
+                                <a href="googleseo-post.html">
+                                    <span>
+                                    <span>谷歌seo入門</span>
+                                    <span class="suffix">//</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-158">
+                                <a href="google-website.html">
+                                    <span>
+                                    <span>適合谷歌seo獨立站</span>
+                                    <span class="suffix">//</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-158">
+                                <a href="quote-post.html">
+                                    <span>
+                                    <span>關鍵詞研究</span>
+                                    <span class="suffix">//</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-158">
+                                <a href="create-high-quality-content.html">
+                                    <span>
+                                    <span>創建高質量內容</span>
+                                    <span class="suffix">//</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-158">
+                                <a href="structured-data-markup.html">
+                                    <span>
+                                    <span>結構化數據標記</span>
+                                    <span class="suffix">//</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-158">
+                                <a href="keywords-post.html">
+                                    <span>
+                                    <span>谷歌seo常見術語</span>
+                                    <span class="suffix">//</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-158">
+                                <a href="google-seo-title.html">
+                                    <span>
+                                    <span>寫好Google SEO標題</span>
+                                    <span class="suffix">//</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-158">
+                                <a href="google-seo-included.html">
+                                    <span>
+                                    <span>收錄量≠流量</span>
+                                    <span class="suffix">//</span>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-item-type-custom menu-item-has-children menu-item-object-custom  menu-item-8">
+                        <a href="google-seo-basics.html">
+                            <span>
+                            <span>谷歌seo基礎知識</span>
+                            <span class="suffix">//</span>
+                            </span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-158">
+                                <a href="what-is-google-seo.html">
+                                    <span>
+                                    <span>什麼是谷歌seo？</span>
+                                    <span class="suffix">//</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-158">
+                                <a href="what-is-long-tail-keywords.html">
+                                    <span>
+                                    <span>什麼是長尾關鍵詞？</span>
+                                    <span class="suffix">//</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-158">
+                                <a href="what-is-seo-optimization-tool.html">
+                                    <span>
+                                    <span>什麼是谷歌seo工具？</span>
+                                    <span class="suffix">//</span>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-item-type-custom menu-item-has-children menu-item-object-custom  menu-item-8">
+                        <a href="factor-post.html">
+                            <span>
+                            <span>谷歌SEO合作(價錢)</span>
+                            <span class="suffix">//</span>
+                            </span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-158">
+                                <a href="factor-post.html">
+                                    <span>
+                                    <span>谷歌seo方案（服務）</span>
+                                    <span class="suffix">//</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-158">
+                                <a href="google-ads-post.html">
+                                    <span>
+                                    <span>谷歌廣告代投（服務）</span>
+                                    <span class="suffix">//</span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-158">
+                                <a href="external-link.html">
+                                    <span>
+                                    <span>英文外鏈（服務）</span>
+                                    <span class="suffix">//</span>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--================= Mobile Menu Start Here =================-->
+    <!--================= Mobile Menu End =================-->
+
+    <!--================= Standard Post Section Start =================-->
+    <div class="xoxo_fn_content">
+        <div class="xoxo_fn_pages">
+            <div class="xoxo_fn_page_ajax">
+                <div class="xoxo_fn_singlepost">
+                    <div class="container">
+                        <div class="xoxo_fn_blog_single" data-post-title="It’s Not Just the Passing of a Queen">
+                            <div class="xoxo_fn_single">
+                                <div class="xoxo_fn_hassidebar">
+                                    <div class="sidebarpage">
+                                        <div class="xoxo_fn_leftsidebar">
+                                            <div class="single_with_share">
+                                                <div class="single__content">
+
+                                                    <div class="post_title_holder" data-has-format="1">
+                                                        <h1 class="fn__maintitle"><span>谷歌seo之結構化數據標記重要性</span></h1>
+                                                    </div>
+                                                    <div class="post_content">
+                                                        <div class="post_c_in">
+                                                            <p>Google搜索中結構化數據標記是一種可以通過向網頁添加特定的標記，來幫助搜索引擎更好地理解網頁內容的技術。谷歌藉助這些標記來生成富媒體搜索結果，如答案卡片、價格比較工具、電影評價等等。</p>
+                                                            <p>使用Google搜索結構化數據標記有助於提高您網站的可見性，並使其在谷歌搜索結果中更加突出。這項技術可以被應用到多種類型的內容中，包括文章、產品、事件、機構和人物信息等等。</p>
+                                                            <p>Google搜索結構化數據標記對於谷歌SEO非常重要。通過添加結構化數據標記，您可以讓您的網站內容更易於被搜索引擎爬蟲識別、理解和組織，並最終提高排名和可見性。</p>
+                                                            <p>在谷歌搜索結果中，結構化數據標記可以使搜索結果更加豐富多彩，從而增加用戶點擊量。例如，在搜索結果中出現的答案卡片、價格比較工具、電影評價等等都是利用結構化數據標記生成的。這些結果往往能夠吸引更多的用戶點擊進入您的網站。</p>
+                                                            <p>同時，結構化數據標記還有助於搜索引擎理解您網站上不同頁面的內容類型和結構，從而更好地將其與用戶搜索查詢進行匹配。這也有助於在特定的搜索中顯示您的網站更為相關的頁面。</p>
+                                                            <h3><strong>Google搜索結構化數據標記示例代碼</strong></h3>
+                                                            <p>要使用Google搜索結構化數據標記，結構化數據可以用於描述各種類型的內容，但並非所有類型的內容都需要添加結構化數據標記。如果您希望瞭解哪些類型的內容最適合應用結構化數據，請查閱谷歌官方文檔。</p>
+                                                            <div class="xoxo_fn_comments">
+                                                                <div class="comment_opener" style="text-align: left;">
+                                                                    <div class="title_holder">
+                                                                        &lt;html&gt;
+                                                                        <br> &nbsp;&nbsp;&nbsp;&lt;head&gt;
+                                                                        <br> &lt;title&gt;谷歌seo之結構化數據標記重要性&lt;/title&gt;<br> &lt;script type="application/ld+json"&gt;<br> {
+                                                                        <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"@context": "https://schema.org/",<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"@type": "Recipe",<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"name": "谷歌seo之結構化數據標記重要性",
+                                                                        <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"author": {
+                                                                        <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"@type": "Person",<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"name": "Mary Stone"<br> &nbsp;&nbsp;&nbsp;},
+                                                                        <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"datePublished": "2018-03-10",<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"description": "Google搜索中結構化數據標記是一種可以通過向網頁添加特定的標記",<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"prepTime":
+                                                                        "PT20M"
+                                                                        <br> }
+                                                                        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/script&gt;
+                                                                        <br>&nbsp;&nbsp;&nbsp; &lt;/head&gt;
+                                                                        <br> &lt;body&gt;
+                                                                        <br> &lt;h2&gt;谷歌seo之結構化數據標記重要性&lt;/h2&gt;<br>&lt;p&gt;&lt;i&gt;by Mary Stone, 2018-03-10&lt;/i&gt;&lt;/p&gt;
+                                                                        <br> &nbsp;&nbsp;&nbsp;&lt;p&gt;Google搜索中結構化數據標記是一種可以通過&lt;/p&gt;
+                                                                        <br> &nbsp;&nbsp;&nbsp;&lt;p&gt; 來幫助搜索引擎更好地理解網頁內容的技術。 &lt;/p&gt;
+                                                                        <br> &nbsp;&nbsp;&nbsp;&lt;/body&gt;
+                                                                        <br> &lt;/html&gt;
+                                                                        <br>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <p>Google支持多個不同的結構化數據格式，例如：JSON-LD、Microdata和RDFa。您需要選擇適合您網站的結構化數據格式。一旦確定了適合您網站的結構化數據格式，就可以開始創建每種類型的內容的結構化數據。這些數據應該包含在您網站的HTML代碼內，並與相應的內容相關聯。</p>
+                                                            <h3><strong>常用的Google搜索結構化數據標記</strong></h3>
+                                                            <p>Google搜索結構化數據標記是一種非常有用的技術，可以增強您網站的SEO表現，並讓您的內容更容易在谷歌搜索結果中顯示。使用結構化數據標記，您可以向搜索引擎提供更豐富和詳細的信息，從而改進搜索結果的外觀和效果。</p>
+                                                            <h5><strong>FAQ常見問答</strong></h5>
+                                                            <p>常見問題解答 (FAQ) 頁包含一系列有關特定主題的問題和回答。常見問題解答 (FAQ) 頁包含一系列有關特定主題的問題和答案。如果您正確標記了 FAQ 頁，它們可能會在 Google 搜索中顯示為富媒體搜索結果，並可通過 Google 助理的 Action，幫助您的網站覆蓋合適的用戶。下面是 FAQ 富媒體搜索結果的示例：</p>
+                                                            <div class="post_top_format">
+                                                                <div class="fn__image_format"><img src="static/picture/faqpage-searchresult.png" alt=""></div>
+                                                            </div>
+                                                            <div class="xoxo_fn_comments">
+                                                                <div class="comment_opener" style="text-align: left;">
+                                                                    <div class="title_holder">
+                                                                        <pre>
+                                                                            &lt;html&gt;
+                                                                              &lt;head&gt;
+                                                                                &lt;title&gt;Example Site - Frequently Asked Questions(FAQ)&lt;/title&gt;
+                                                                                &lt;script type=&quot;application/ld+json&quot;&gt;
+                                                                                {
+                                                                                  &quot;@context&quot;: &quot;https://schema.org&quot;,
+                                                                                  &quot;@type&quot;: &quot;FAQPage&quot;,
+                                                                                  &quot;mainEntity&quot;: [{
+                                                                                    &quot;@type&quot;: &quot;Question&quot;,
+                                                                                    &quot;name&quot;: &quot;What is the return policy?&quot;,
+                                                                                    &quot;acceptedAnswer&quot;: {
+                                                                                      &quot;@type&quot;: &quot;Answer&quot;,
+                                                                                      &quot;text&quot;: &quot;&lt;p&gt;Most unopened items in new condition and returned within &lt;b&gt;90 days&lt;/b&gt; will receive a refund or exchange. Some items have a modified return policy noted on the receipt or packing slip. Items that are opened or damaged or do not have a receipt may be denied a refund or exchange. Items purchased online or in-store may be returned to any store.&lt;/p&gt;&lt;p&gt;Online purchases may be returned via a major parcel carrier. &lt;a href=https://example.com/returns&gt; Click here &lt;/a&gt; to initiate a return.&lt;/p&gt;&quot;
+                                                                                    }
+                                                                                  }, {
+                                                                                    &quot;@type&quot;: &quot;Question&quot;,
+                                                                                    &quot;name&quot;: &quot;How long does it take to process a refund?&quot;,
+                                                                                    &quot;acceptedAnswer&quot;: {
+                                                                                      &quot;@type&quot;: &quot;Answer&quot;,
+                                                                                      &quot;text&quot;: &quot;We will reimburse you for returned items in the same way you paid for them. For example, any amounts deducted from a gift card will be credited back to a gift card. For returns by mail, once we receive your return, we will process it within 4&ndash;5 business days. It may take up to 7 days after we process the return to reflect in your account, depending on your financial institution&#39;s processing time.&quot;
+                                                                                    }
+                                                                                  }, {
+                                                                                    &quot;@type&quot;: &quot;Question&quot;,
+                                                                                    &quot;name&quot;: &quot;What is the policy for late/non-delivery of items ordered online?&quot;,
+                                                                                    &quot;acceptedAnswer&quot;: {
+                                                                                      &quot;@type&quot;: &quot;Answer&quot;,
+                                                                                      &quot;text&quot;: &quot;&lt;p&gt;Our local teams work diligently to make sure that your order arrives on time, within our normaldelivery hours of 9AM to 8PM in the recipient&#39;s time zone. During  busy holiday periods like Christmas, Valentine&#39;s and Mother&#39;s Day, we may extend our delivery hours before 9AM and after 8PM to ensure that all gifts are delivered on time. If for any reason your gift does not arrive on time, our dedicated Customer Service agents will do everything they can to help successfully resolve your issue.&lt;/p&gt;&lt;p&gt;&lt;a href=https://example.com/orders/&gt;Click here&lt;/a&gt; to complete the form with your order-related question(s).&lt;/p&gt;&quot;
+                                                                                    }
+                                                                                  }, {
+                                                                                    &quot;@type&quot;: &quot;Question&quot;,
+                                                                                    &quot;name&quot;: &quot;When will my credit card be charged?&quot;,
+                                                                                    &quot;acceptedAnswer&quot;: {
+                                                                                      &quot;@type&quot;: &quot;Answer&quot;,
+                                                                                      &quot;text&quot;: &quot;We&#39;ll attempt to securely charge your credit card at the point of purchase online. If there&#39;s a problem, you&#39;ll be notified on the spot and prompted to use another card. Once we receive verification of sufficient funds, your payment will be completed and transferred securely to us. Your account will be charged in 24 to 48 hours.&quot;
+                                                                                    }
+                                                                                  }, {
+                                                                                    &quot;@type&quot;: &quot;Question&quot;,
+                                                                                    &quot;name&quot;: &quot;Will I be charged sales tax for online orders?&quot;,
+                                                                                    &quot;acceptedAnswer&quot;: {
+                                                                                      &quot;@type&quot;: &quot;Answer&quot;,
+                                                                                      &quot;text&quot;:&quot;Local and State sales tax will be collected if your recipient&#39;s mailing address is in: &lt;ul&gt;&lt;li&gt;Arizona&lt;/li&gt;&lt;li&gt;California&lt;/li&gt;&lt;li&gt;Colorado&lt;/li&gt;&lt;/ul&gt;&quot;}
+                                                                                    }]
+                                                                                }
+                                                                                &lt;/script&gt;
+                                                                              &lt;/head&gt;
+                                                                              &lt;body&gt;
+                                                                              &lt;/body&gt;
+                                                                            &lt;/html&gt;</pre>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <h5><strong>Logo</strong></h5>
+                                                            <p>Google 搜索在搜索結果和 Google 知識面板中使用哪張圖片作為貴組織的徽標。Google 搜索使用用例示例中的標記來識別要用作組織徽標的圖片。這樣可確保該圖片儘可能顯示在有關該公司的搜索結果中。此類標記會明確地告知 Google 搜索算法：應在知識面板中顯示該圖片。</p>
+                                                            <div class="post_top_format">
+                                                                <div class="fn__image_format"><img src="static/picture/logo01.png" alt=""></div>
+                                                            </div>
+                                                            <div class="xoxo_fn_comments">
+                                                                <div class="comment_opener" style="text-align: left;">
+                                                                    <div class="title_holder">
+                                                                        <pre>
+                                                                            &lt;html&gt;
+                                                                            &nbsp; &lt;head&gt;
+                                                                            &nbsp; &nbsp; &lt;title&gt;About Us&lt;/title&gt;
+                                                                            &nbsp; &nbsp; &lt;script type=&quot;application/ld+json&quot;&gt;
+                                                                            &nbsp; &nbsp; {
+                                                                            &nbsp; &nbsp; &nbsp; &quot;@context&quot;: &quot;https://schema.org&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &quot;@type&quot;: &quot;Organization&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &quot;url&quot;: &quot;https://www.example.com&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &quot;logo&quot;: &quot;https://www.example.com/images/logo.png&quot;
+                                                                            &nbsp; &nbsp; }
+                                                                            &nbsp; &nbsp; &lt;/script&gt;
+                                                                            &nbsp; &lt;/head&gt;
+                                                                            &lt;/html&gt;</pre>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <h5><strong>評價摘要</strong></h5>
+                                                            <p>評價摘要是來自評價網站的簡短評價摘錄或評分，通常是眾多評價者給出的綜合評分的平均值。當 Google 發現有效的評價或評分標記時，可能會顯示豐富網頁摘要，其中包含根據評價或評分得出的星級和其他摘要信息。除了文字評價之外，還有數字分制（如 1 到 5）的評分。評價摘要可能會出現在富媒體搜索結果或 Google 知識面板中。您可以為以下內容類型（和子類型）提供評分：</p>
+                                                            <div class="post_top_format">
+                                                                <div class="fn__image_format"><img src="static/picture/reviews04.png" alt=""></div>
+                                                            </div>
+                                                            <div class="xoxo_fn_comments">
+                                                                <div class="comment_opener" style="text-align: left;">
+                                                                    <div class="title_holder">
+                                                                        <pre>
+                                                                            &lt;html&gt;
+                                                                            &nbsp; &lt;head&gt;
+                                                                            &nbsp; &lt;title&gt;Legal Seafood&lt;/title&gt;
+                                                                            &nbsp; &nbsp; &lt;script type=&quot;application/ld+json&quot;&gt;
+                                                                            &nbsp; &nbsp; {
+                                                                            &nbsp; &nbsp; &nbsp; &quot;@context&quot;: &quot;https://schema.org/&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &quot;@type&quot;: &quot;Review&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &quot;itemReviewed&quot;: {
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &quot;@type&quot;: &quot;Restaurant&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &quot;image&quot;: &quot;https://www.example.com/seafood-restaurant.jpg&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &quot;name&quot;: &quot;Legal Seafood&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &quot;servesCuisine&quot;: &quot;Seafood&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &quot;priceRange&quot;: &quot;$$$&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &quot;telephone&quot;: &quot;1234567&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &quot;address&quot; :{
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;@type&quot;: &quot;PostalAddress&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;streetAddress&quot;: &quot;123 William St&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;addressLocality&quot;: &quot;New York&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;addressRegion&quot;: &quot;NY&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;postalCode&quot;: &quot;10038&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;addressCountry&quot;: &quot;US&quot;
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; }
+                                                                            &nbsp; &nbsp; &nbsp; },
+                                                                            &nbsp; &nbsp; &nbsp; &quot;reviewRating&quot;: {
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &quot;@type&quot;: &quot;Rating&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &quot;ratingValue&quot;: &quot;4&quot;
+                                                                            &nbsp; &nbsp; &nbsp; },
+                                                                            &nbsp; &nbsp; &nbsp; &quot;name&quot;: &quot;A good seafood place.&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &quot;author&quot;: {
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &quot;@type&quot;: &quot;Person&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &quot;name&quot;: &quot;Bob Smith&quot;
+                                                                            &nbsp; &nbsp; &nbsp; },
+                                                                            &nbsp; &nbsp; &nbsp; &quot;publisher&quot;: {
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &quot;@type&quot;: &quot;Organization&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &quot;name&quot;: &quot;Washington Times&quot;
+                                                                            &nbsp; &nbsp; &nbsp; }
+                                                                            &nbsp; &nbsp; }
+                                                                            &nbsp; &nbsp; &lt;/script&gt;
+                                                                            &nbsp; &lt;/head&gt;
+                                                                            &nbsp; &lt;body&gt;
+                                                                            &nbsp; &lt;/body&gt;
+                                                                            &lt;/html&gt;</pre>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <h5><strong>站點鏈接搜索框</strong></h5>
+                                                            <p>站點鏈接搜索框為用戶提供了一種快捷方式，讓他們可以立即在搜索結果頁上搜索您的網站或應用。搜索框具有實時建議和其他功能。</p>
+                                                            <div class="post_top_format">
+                                                                <div class="fn__image_format"><img src="static/picture/sitelinks01.png" alt=""></div>
+                                                            </div>
+                                                            <div class="xoxo_fn_comments">
+                                                                <div class="comment_opener" style="text-align: left;">
+                                                                    <div class="title_holder">
+                                                                        <pre>
+                                                                            &lt;html&gt;
+                                                                            &nbsp; &lt;head&gt;
+                                                                            &nbsp; &nbsp; &lt;title&gt;The title of the page&lt;/title&gt;
+                                                                            &nbsp; &nbsp; &lt;script type=&quot;application/ld+json&quot;&gt;
+                                                                            &nbsp; &nbsp; {
+                                                                            &nbsp; &nbsp; &nbsp; &quot;@context&quot;: &quot;https://schema.org&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &quot;@type&quot;: &quot;WebSite&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &quot;url&quot;: &quot;https://www.example.com/&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &quot;potentialAction&quot;: {
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &quot;@type&quot;: &quot;SearchAction&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &quot;target&quot;: {
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;@type&quot;: &quot;EntryPoint&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;urlTemplate&quot;: &quot;https://query.example.com/search?q={search_term_string}&quot;
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; },
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &quot;query-input&quot;: &quot;required name=search_term_string&quot;
+                                                                            &nbsp; &nbsp; &nbsp; }
+                                                                            &nbsp; &nbsp; }
+                                                                            &nbsp; &nbsp; &lt;/script&gt;
+                                                                            &nbsp; &lt;/head&gt;
+                                                                            &nbsp; &lt;body&gt;
+                                                                            &nbsp; &lt;/body&gt;
+                                                                            &lt;/html&gt;</pre>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <h5><strong>視頻</strong></h5>
+                                                            <p>Google 搜索是用戶查找並觀看視頻的切入點。雖然 Google 會嘗試自動了解視頻的詳細信息，但是您可以使用 VideoObject 來標記視頻，以明確提供說明、縮略圖網址、上傳日期和時長等信息。視頻可以顯示在 Google 搜索結果、視頻搜索結果、Google 圖片和 Google 探索中。</p>
+                                                            <div class="post_top_format">
+                                                                <div class="fn__image_format"><img src="static/picture/learning_videos_example.png" alt=""></div>
+                                                            </div>
+                                                            <div class="xoxo_fn_comments">
+                                                                <div class="comment_opener" style="text-align: left;">
+                                                                    <div class="title_holder">
+                                                                        <pre>
+                                                                            &lt;html&gt;
+                                                                            &nbsp; &lt;head&gt;
+                                                                            &nbsp; &nbsp; &lt;title&gt;Introducing the self-driving bicycle in the Netherlands&lt;/title&gt;
+                                                                            &nbsp; &nbsp; &lt;script type=&quot;application/ld+json&quot;&gt;
+                                                                            &nbsp; &nbsp; {
+                                                                            &nbsp; &nbsp; &nbsp; &quot;@context&quot;: &quot;https://schema.org&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &quot;@type&quot;: &quot;VideoObject&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &quot;name&quot;: &quot;Introducing the self-driving bicycle in the Netherlands&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &quot;description&quot;: &quot;This spring, Google is introducing the self-driving bicycle in Amsterdam, the world&#39;s premier cycling city. The Dutch cycle more than any other nation in the world, almost 900 kilometres per year per person, amounting to over 15 billion kilometres annually. The self-driving bicycle enables safe navigation through the city for Amsterdam residents, and furthers Google&#39;s ambition to improve urban mobility with technology. Google Netherlands takes enormous pride in the fact that a Dutch team worked on this innovation that will have great impact in their home country.&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &quot;thumbnailUrl&quot;: [
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &quot;https://example.com/photos/1x1/photo.jpg&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &quot;https://example.com/photos/4x3/photo.jpg&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &quot;https://example.com/photos/16x9/photo.jpg&quot;
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp;],
+                                                                            &nbsp; &nbsp; &nbsp; &quot;uploadDate&quot;: &quot;2016-03-31T08:00:00+08:00&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &quot;duration&quot;: &quot;PT1M54S&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &quot;contentUrl&quot;: &quot;https://www.example.com/video/123/file.mp4&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &quot;embedUrl&quot;: &quot;https://www.example.com/embed/123&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &quot;interactionStatistic&quot;: {
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &quot;@type&quot;: &quot;InteractionCounter&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &quot;interactionType&quot;: { &quot;@type&quot;: &quot;WatchAction&quot; },
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &quot;userInteractionCount&quot;: 5647018
+                                                                            &nbsp; &nbsp; &nbsp; },
+                                                                            &nbsp; &nbsp; &nbsp; &quot;regionsAllowed&quot;: &quot;US,NL&quot;
+                                                                            &nbsp; &nbsp; }
+                                                                            &nbsp; &nbsp; &lt;/script&gt;
+                                                                            &nbsp; &lt;/head&gt;
+                                                                            &nbsp; &lt;body&gt;
+                                                                            &nbsp; &lt;/body&gt;
+                                                                            &lt;/html&gt;</pre>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <h5><strong>商品</strong></h5>
+                                                            <p>當您向商品頁面添加結構化數據後，Google 搜索結果（包括 Google 圖片和 Google 智能鏡頭中的搜索結果）能夠以更豐富的方式顯示商品信息。用戶可以直接在搜索結果中查看價格、庫存狀況、評價評分、配送信息等。</p>
+                                                            <div class="post_top_format">
+                                                                <div class="fn__image_format"><img src="static/picture/product-snippet.png" alt=""></div>
+                                                            </div>
+                                                            <div class="xoxo_fn_comments">
+                                                                <div class="comment_opener" style="text-align: left;">
+                                                                    <div class="title_holder">
+                                                                        <pre>
+                                                                            &nbsp;&lt;html&gt;
+                                                                            &nbsp; &lt;head&gt;
+                                                                            &nbsp; &nbsp; &lt;title&gt;Executive Anvil&lt;/title&gt;
+                                                                            &nbsp; &nbsp; &lt;script type=&quot;application/ld+json&quot;&gt;
+                                                                            &nbsp; &nbsp; {
+                                                                            &nbsp; &nbsp; &nbsp; &quot;@context&quot;: &quot;https://schema.org/&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &quot;@type&quot;: &quot;Product&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &quot;name&quot;: &quot;Executive Anvil&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &quot;description&quot;: &quot;Sleeker than ACME&#39;s Classic Anvil, the Executive Anvil is perfect for the business traveler looking for something to drop from a height.&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &quot;review&quot;: {
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &quot;@type&quot;: &quot;Review&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &quot;reviewRating&quot;: {
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;@type&quot;: &quot;Rating&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;ratingValue&quot;: 4,
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;bestRating&quot;: 5
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; },
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &quot;author&quot;: {
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;@type&quot;: &quot;Person&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;name&quot;: &quot;Fred Benson&quot;
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; }
+                                                                            &nbsp; &nbsp; &nbsp; },
+                                                                            &nbsp; &nbsp; &nbsp; &quot;aggregateRating&quot;: {
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &quot;@type&quot;: &quot;AggregateRating&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &quot;ratingValue&quot;: 4.4,
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &quot;reviewCount&quot;: 89
+                                                                            &nbsp; &nbsp; &nbsp; }
+                                                                            &nbsp; &nbsp; }
+                                                                            &nbsp; &nbsp; &lt;/script&gt;
+                                                                            &nbsp; &lt;/head&gt;
+                                                                            &nbsp; &lt;body&gt;
+                                                                            &nbsp; &lt;/body&gt;
+                                                                            &lt;/html&gt;</pre>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <h5><strong>問答</strong></h5>
+                                                            <p>問答網頁是包含問答格式數據（先列出一個問題，後跟相應的答案）的網頁。對於表示問題及相應答案的內容，您可以使用 schema.org QAPage、Question 和 Answer 類型標記數據。</p>
+                                                            <div class="post_top_format">
+                                                                <div class="fn__image_format"><img src="static/picture/qa-example-screenshot.png" alt=""></div>
+                                                            </div>
+                                                            <div class="xoxo_fn_comments">
+                                                                <div class="comment_opener" style="text-align: left;">
+                                                                    <div class="title_holder">
+                                                                        <pre>
+                                                                            &lt;html&gt;
+                                                                            &nbsp; &lt;head&gt;
+                                                                            &nbsp; &nbsp; &lt;title&gt;How many ounces are there in a pound?&lt;/title&gt;
+                                                                            &nbsp; &nbsp; &lt;script type=&quot;application/ld+json&quot;&gt;
+                                                                            &nbsp; &nbsp; {
+                                                                            &nbsp; &nbsp; &nbsp; &quot;@context&quot;: &quot;https://schema.org&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &quot;@type&quot;: &quot;QAPage&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &quot;mainEntity&quot;: {
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &quot;@type&quot;: &quot;Question&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &quot;name&quot;: &quot;How many ounces are there in a pound?&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &quot;text&quot;: &quot;I have taken up a new interest in baking and keep running across directions in ounces and pounds. I have to translate between them and was wondering how many ounces are in a pound?&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &quot;answerCount&quot;: 3,
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &quot;upvoteCount&quot;: 26,
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &quot;acceptedAnswer&quot;: {
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;@type&quot;: &quot;Answer&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;text&quot;: &quot;1 pound (lb) is equal to 16 ounces (oz).&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;upvoteCount&quot;: 1337,
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;url&quot;: &quot;https://example.com/question1#acceptedAnswer&quot;
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; },
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &quot;suggestedAnswer&quot;: [
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;@type&quot;: &quot;Answer&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;text&quot;: &quot;Are you looking for ounces or fluid ounces? If you are looking for fluid ounces there are 15.34 fluid ounces in a pound of water.&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;upvoteCount&quot;: 42,
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;url&quot;: &quot;https://example.com/question1#suggestedAnswer1&quot;
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }, {
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;@type&quot;: &quot;Answer&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;text&quot;: &quot; I can&#39;t remember exactly, but I think 18 ounces in a lb. You might want to double check that.&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;upvoteCount&quot;: 0,
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;url&quot;: &quot;https://example.com/question1#suggestedAnswer2&quot;
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; ]
+                                                                            &nbsp; &nbsp; &nbsp; }
+                                                                            &nbsp; &nbsp; }
+                                                                            &nbsp; &nbsp; &lt;/script&gt;
+                                                                            &nbsp; &lt;/head&gt;
+                                                                            &nbsp; &lt;body&gt;
+                                                                            &nbsp; &lt;/body&gt;
+                                                                            &lt;/html&gt;</pre>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <h5><strong>知識問答</strong></h5>
+                                                            <p>如果您有抽認卡頁面，可以通過向其中添加 Quiz 結構化數據來幫助學生更好地找到教育類問題的答案。添加結構化數據後，您的內容將會顯示在 Google 搜索結果、Google 助理和 Google 智能鏡頭搜索結果的知識問答輪播界面中。</p>
+                                                            <div class="post_top_format">
+                                                                <div class="fn__image_format"><img src="static/picture/education-qa-rich-result.png" alt=""></div>
+                                                            </div>
+                                                            <div class="xoxo_fn_comments">
+                                                                <div class="comment_opener" style="text-align: left;">
+                                                                    <div class="title_holder">
+                                                                        <pre>
+                                                                            &lt;html&gt;
+                                                                            &nbsp; &lt;head&gt;
+                                                                            &nbsp; &nbsp; &lt;title&gt;Cell Transport&lt;/title&gt;
+                                                                            &nbsp; &nbsp; &lt;script type=&quot;application/ld+json&quot;&gt;
+                                                                            &nbsp; &nbsp; {
+                                                                            &nbsp; &nbsp; &nbsp; &quot;@context&quot;: &quot;https://schema.org/&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &quot;@type&quot;: &quot;Quiz&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &quot;about&quot;: {
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &quot;@type&quot;: &quot;Thing&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &quot;name&quot;: &quot;Cell Transport&quot;
+                                                                            &nbsp; &nbsp; &nbsp; },
+                                                                            &nbsp; &nbsp; &nbsp; &quot;educationalAlignment&quot;: [
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; {
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;@type&quot;: &quot;AlignmentObject&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;alignmentType&quot;: &quot;educationalSubject&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;targetName&quot;: &quot;Biology&quot;
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; }
+                                                                            &nbsp; &nbsp; &nbsp; ],
+                                                                            &nbsp; &nbsp; &nbsp; &quot;hasPart&quot;: [
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; {
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;@context&quot;: &quot;https://schema.org/&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;@type&quot;: &quot;Question&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;eduQuestionType&quot;: &quot;Flashcard&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;text&quot;: &quot;This is some fact about receptor molecules.&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;acceptedAnswer&quot;: {
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;@type&quot;: &quot;Answer&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;text&quot;: &quot;receptor molecules&quot;
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; },
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; {
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;@context&quot;: &quot;https://schema.org/&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;@type&quot;: &quot;Question&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;eduQuestionType&quot;: &quot;Flashcard&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;text&quot;: &quot;This is some fact about the cell membrane.&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;acceptedAnswer&quot;: {
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;@type&quot;: &quot;Answer&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;text&quot;: &quot;cell membrane&quot;
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; }
+                                                                            &nbsp; &nbsp; &nbsp; ]
+                                                                            &nbsp; &nbsp; }
+                                                                            &nbsp; &nbsp; &lt;/script&gt;
+                                                                            &nbsp; &lt;/head&gt;
+                                                                            &lt;/html&gt;</pre>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <h5><strong>課程輪播</strong></h5>
+                                                            <p>您可以使用結構化數據標記課程列表，以便潛在學生通過 Google 搜索找到您的課程。您可以提供詳細信息，包括課程名稱、提供者和簡短說明。</p>
+                                                            <div class="post_top_format">
+                                                                <div class="fn__image_format"><img src="static/picture/course-carousel-rich-result.png" alt=""></div>
+                                                            </div>
+                                                            <div class="xoxo_fn_comments">
+                                                                <div class="comment_opener" style="text-align: left;">
+                                                                    <div class="title_holder">
+                                                                        <pre>
+                                                                            &lt;html&gt;
+                                                                            &nbsp; &lt;head&gt;
+                                                                            &nbsp; &nbsp; &lt;title&gt;Introduction to Computer Science and Programming&lt;/title&gt;
+                                                                            &nbsp; &nbsp; &lt;script type=&quot;application/ld+json&quot;&gt;
+                                                                            &nbsp; &nbsp; {
+                                                                            &nbsp; &nbsp; &nbsp; &quot;@context&quot;: &quot;https://schema.org&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &quot;@type&quot;: &quot;Course&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &quot;name&quot;: &quot;Introduction to Computer Science and Programming&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &quot;description&quot;: &quot;Introductory CS course laying out the basics.&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &quot;provider&quot;: {
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &quot;@type&quot;: &quot;Organization&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &quot;name&quot;: &quot;University of Technology - Eureka&quot;,
+                                                                            &nbsp; &nbsp; &nbsp; &nbsp; &quot;sameAs&quot;: &quot;https://www.example.com&quot;
+                                                                            &nbsp; &nbsp; &nbsp; }
+                                                                            &nbsp; &nbsp; }
+                                                                            &nbsp; &nbsp; &lt;/script&gt;
+                                                                            &nbsp; &lt;/head&gt;
+                                                                            &nbsp; &lt;body&gt;
+                                                                            &nbsp; &lt;/body&gt;
+                                                                            &lt;/html&gt;</pre>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <h3><strong>如何檢測結構化數據標記</strong></h3>
+                                                            <p>結構化數據標記的常見格式是使用 JSON-LD、RDFa、Microdata 等。雖然這些格式可能有所不同，但它們都具有相同的功能，即為搜索引擎提供更多關於網頁內容的信息。</p>
+                                                            <div class="blog__item blog__item_classic">
+                                                                <div class="blog__link_item">
+                                                                    <a href="https://search.google.com/test/rich-results?hl=zh-CN" rel="noreferrer noopener" target="_blank">富媒體搜索結果測試網站：https://search.google.com/test/</a>
+                                                                </div>
+                                                            </div>
+                                                            <p><br></p>
+                                                            <p>使用 Google 搜索控制檯。可以通過 Google 搜索控制檯中的結構化數據報告來檢查已添加到網站上的結構化數據。在搜索控制檯中單擊左側菜單中的“增強型搜索功能”，然後單擊“結構化數據”。此時將出現一個報告，其中包含指向每個錯誤或警告頁面的鏈接。</p>
+                                                            <h3><strong>使用結構化數據標記總結</strong></h3>
+                                                            <p>總之，結構化數據標記是谷歌SEO優化中不可或缺的一部分，它可以幫助網站提高排名和可見性，並吸引更多的用戶點擊。如果要開始使用結構化數據標記，請先了解適用於您網站內容的不同標記類型，並按照指引添加正確的代碼。您可以使用谷歌的結構化數據標記測試工具來確認您網站上已經添加的標記是否可讀取並且符合標準，以便讓您網站從中獲益。</p>
+                                                            <h3><strong>關於結構化數據標記的常見問答</strong></h3>
+                                                            <h5><strong>什麼是結構化數據標記？</strong></h5>
+                                                            <p>結構化數據標記是一種將網頁內容以半結構化和標準化格式呈現給搜索引擎的技術。它使用 schema.org 和其他規範來為圖書、產品、企業地址、評分等信息提供詳細的描述。結構化數據標記可以幫助搜索引擎理解你的網站，並更好地顯示出來。</p>
+                                                            <h5><strong>結構化數據標記對 SEO 的影響是什麼？</strong></h5>
+                                                            <p>結構化數據標記不是直接用於排名或搜索引擎優化的算法，但它可以幫助搜索引擎更好地理解你發佈的內容，並在搜索結果頁面上更合適地呈現。如果正確地使用結構化數據標記，可以增加點擊率和流量，提高用戶滿意度並提升品牌知名度。</p>
+                                                            <h5><strong>如何實現結構化數據標記？</strong></h5>
+                                                            <p>在網頁上實現結構化數據標記需要使用一些 HTML 標籤和屬性，如 itemtype、itemid、itemprop 和 itemscope 等。你可以通過手動編寫代碼或使用插件/工具來添加這些標記。谷歌提供了一個名為 Structured Data Testing Tool 的免費工具，用於檢查和測試結構化數據標記是否正確。</p>
+                                                            <h5><strong>是否每個頁面都需要結構化數據標記？</strong></h5>
+                                                            <p>並非每個頁面都需要結構化數據標記，但對於包含詳細信息的頁面（如產品、評論等）或者企業地址 / 聯繫方式等頁面，結構化數據標記是非常有幫助的。總體而言，如果你想讓搜索引擎更好地理解你的網站，並在搜索結果頁面上呈現更詳細的信息，那麼添加結構化數據標記通常是值得的。</p>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="xoxo_fn_tags">
+                                                        <ul>
+                                                            <li class="tag_item"><a href="https://hk.seoset.cc/structured-data-markup.html">谷歌SEO</a>
+                                                            </li>
+                                                            <li class="tag_item"><a href="https://hk.seoset.cc/structured-data-markup.html">谷歌SEO優化</a>
+                                                            </li>
+                                                            <li class="tag_item"><a href="https://hk.seoset.cc/structured-data-markup.html">結構化數據標記</a>
+                                                            </li>
+                                                            <li class="tag_item"><a href="https://hk.seoset.cc/structured-data-markup.html">Google搜索</a>
+                                                            </li>
+                                                            <li class="tag_item"><a href="https://hk.seoset.cc/structured-data-markup.html">谷歌搜索</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="xoxo_fn_pnb" data-status="yes">
+                                                <div class="prev item" title="Do You Need to Change Yourself" data-img="yes">
+                                                    <a class="full_link" href="https://hk.seoset.cc/quote-post.html"></a>
+                                                    <p class="fn_desc"><span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewbox="0 0 557.97 1061" style="enable-background:new 0 0 557.97 1061;" xml:space="preserve" class="fn__svg  replaced-svg">
+                                                                <path d="M557.97,554.2c0,4.13,0,8.26,0,12.39c-0.37,2.83-0.75,5.66-1.11,8.49c-2.47,19.12-10.14,35.74-23.81,49.46  c-1.02,1.02-2.42,1.87-3.79,2.31c-8.96,2.89-18.12,3.28-27.38,1.91c-13.68-2.03-26.18-7.3-38.1-14.08  c-21.62-12.31-40.29-28.39-57.82-45.86c-28.44-28.34-53.31-59.63-76.03-92.68c-0.61-0.89-1.29-1.73-2.3-3.08  c-0.1,1.2-0.17,1.63-0.17,2.06c0.03,32.31-0.98,64.6-3.29,96.83c-1.56,21.73-3.32,43.46-5.57,65.13  c-2.71,26.12-6.58,52.09-11.66,77.88c-6.4,32.52-15.07,64.34-28.3,94.82c-22.74,52.42-51.12,101.67-83.67,148.55  c-17.42,25.09-35.96,49.32-57.81,70.77c-14.1,13.84-28.57,27.36-48.82,31.92c-1.97,0-3.95,0-5.92,0c-3.98-1.33-7.87-2.73-10.95-5.86  c-5.86-5.95-8.47-13.2-8.88-21.34c-0.68-13.44,2.95-26.11,7.27-38.6c7.44-21.55,17.29-42.09,27.01-62.67  c14.89-31.52,29.92-62.97,43.1-95.26c17.4-42.65,30.2-86.59,37.18-132.14c3.19-20.81,5.97-41.71,8.22-62.64  c2.09-19.52,3.54-39.12,4.7-58.73c1.05-17.73,1.42-35.5,1.92-53.26c0.95-34.02,0.14-68.02-1.36-102c-0.16-3.52-0.46-7.03-0.7-10.54  c-1.06,0.87-1.57,1.78-2.04,2.72c-18.76,36.7-39.4,72.27-63.39,105.83c-13.17,18.43-27.28,36.08-44.08,51.41  c-9.45,8.62-19.55,16.34-31.6,21.09c-7.23,2.86-14.69,4.16-22.4,2.77c-13.71-2.47-20.98-11.51-24.1-24.42  c-1.07-4.42-1.54-8.97-2.29-13.47c0-4.49,0-8.98,0-13.46c0.18-0.86,0.42-1.72,0.53-2.59c1.04-8.27,1.79-16.58,3.14-24.79  c3.57-21.68,9.15-42.91,15.05-64.05c9.97-35.71,20.36-71.3,30.05-107.09c9.64-35.6,17.21-71.58,18.86-108.63  c1.27-28.54,0.95-57.05,0.09-85.58c-0.86-28.33-2.7-56.65-1.36-85.02c0.56-11.84,1.68-23.63,4.84-35.09  C75.99,20.25,84.24,5.72,102.87,0c1.8,0,3.59,0,5.39,0c5.02,1.57,10.2,2.77,15.04,4.79c10.07,4.19,19.11,10.23,27.92,16.58  c22.42,16.14,42.81,34.66,62.61,53.83c49.96,48.37,96.11,100.26,141.08,153.24c9.64,11.35,18.66,23.27,28.83,34.13  c38.53,41.13,74.39,84.4,106,131.1c19.59,28.93,37.26,58.96,50.61,91.35c7.53,18.28,13.53,37.01,16.13,56.7  C557.02,545.87,557.47,550.04,557.97,554.2z">
+                                                                </path>
+                                                            </svg>上一篇</span></p>
+                                                    <div class="item_in">
+                                                        <div class="img frenify-ready" style="background-image: url(static/image/09.jpg);">
+                                                        </div>
+                                                        <div class="desc">
+                                                            <h3 class="fn_title"><a href="https://hk.seoset.cc/quote-post.html">19個谷歌seo關鍵詞分析研究工具</a></h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="next item" title="A Love Letter to Los Angeles" data-img="yes">
+                                                    <a class="full_link" href="https://hk.seoset.cc/keywords-post.html"></a>
+                                                    <p class="fn_desc"><span>下一篇<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewbox="0 0 557.97 1061" style="enable-background:new 0 0 557.97 1061;" xml:space="preserve" class="fn__svg  replaced-svg">
+                                                                <path d="M557.97,554.2c0,4.13,0,8.26,0,12.39c-0.37,2.83-0.75,5.66-1.11,8.49c-2.47,19.12-10.14,35.74-23.81,49.46  c-1.02,1.02-2.42,1.87-3.79,2.31c-8.96,2.89-18.12,3.28-27.38,1.91c-13.68-2.03-26.18-7.3-38.1-14.08  c-21.62-12.31-40.29-28.39-57.82-45.86c-28.44-28.34-53.31-59.63-76.03-92.68c-0.61-0.89-1.29-1.73-2.3-3.08  c-0.1,1.2-0.17,1.63-0.17,2.06c0.03,32.31-0.98,64.6-3.29,96.83c-1.56,21.73-3.32,43.46-5.57,65.13  c-2.71,26.12-6.58,52.09-11.66,77.88c-6.4,32.52-15.07,64.34-28.3,94.82c-22.74,52.42-51.12,101.67-83.67,148.55  c-17.42,25.09-35.96,49.32-57.81,70.77c-14.1,13.84-28.57,27.36-48.82,31.92c-1.97,0-3.95,0-5.92,0c-3.98-1.33-7.87-2.73-10.95-5.86  c-5.86-5.95-8.47-13.2-8.88-21.34c-0.68-13.44,2.95-26.11,7.27-38.6c7.44-21.55,17.29-42.09,27.01-62.67  c14.89-31.52,29.92-62.97,43.1-95.26c17.4-42.65,30.2-86.59,37.18-132.14c3.19-20.81,5.97-41.71,8.22-62.64  c2.09-19.52,3.54-39.12,4.7-58.73c1.05-17.73,1.42-35.5,1.92-53.26c0.95-34.02,0.14-68.02-1.36-102c-0.16-3.52-0.46-7.03-0.7-10.54  c-1.06,0.87-1.57,1.78-2.04,2.72c-18.76,36.7-39.4,72.27-63.39,105.83c-13.17,18.43-27.28,36.08-44.08,51.41  c-9.45,8.62-19.55,16.34-31.6,21.09c-7.23,2.86-14.69,4.16-22.4,2.77c-13.71-2.47-20.98-11.51-24.1-24.42  c-1.07-4.42-1.54-8.97-2.29-13.47c0-4.49,0-8.98,0-13.46c0.18-0.86,0.42-1.72,0.53-2.59c1.04-8.27,1.79-16.58,3.14-24.79  c3.57-21.68,9.15-42.91,15.05-64.05c9.97-35.71,20.36-71.3,30.05-107.09c9.64-35.6,17.21-71.58,18.86-108.63  c1.27-28.54,0.95-57.05,0.09-85.58c-0.86-28.33-2.7-56.65-1.36-85.02c0.56-11.84,1.68-23.63,4.84-35.09  C75.99,20.25,84.24,5.72,102.87,0c1.8,0,3.59,0,5.39,0c5.02,1.57,10.2,2.77,15.04,4.79c10.07,4.19,19.11,10.23,27.92,16.58  c22.42,16.14,42.81,34.66,62.61,53.83c49.96,48.37,96.11,100.26,141.08,153.24c9.64,11.35,18.66,23.27,28.83,34.13  c38.53,41.13,74.39,84.4,106,131.1c19.59,28.93,37.26,58.96,50.61,91.35c7.53,18.28,13.53,37.01,16.13,56.7  C557.02,545.87,557.47,550.04,557.97,554.2z">
+                                                                </path>
+                                                            </svg></span></p>
+                                                    <div class="item_in">
+                                                        <div class="img frenify-ready" style="background-image: url(static/image/08.jpg);">
+                                                        </div>
+                                                        <div class="desc">
+                                                            <h3 class="fn_title"><a href="https://hk.seoset.cc/keywords-post.html">谷歌seo常見術語</a></h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="xoxo_fn_rightsidebar">
+                                            <div class="sidebar_in">
+                                                <div class="xoxo_fn_sidebar">
+                                                    <div class="widget_block clear widget_xoxo_author">
+                                                        <div class="wid-title">
+                                                            <span class="text">關於我們</span>
+                                                            <span class="icon"></span>
+                                                        </div>
+                                                        <div class="xoxo_fn_widget_author">
+                                                            <div class="info_img" style="background-image: url(static/image/author.jpg);">
+                                                                <a class="full_link" href="factor-post.html"></a>
+                                                                <div class="abs_img"></div>
+                                                            </div>
+                                                            <div class="info_desc">
+                                                                <div class="author_top">
+                                                                    <h3 class="fn_title">
+                                                                        <a href="factor-post.html">和我們合作</a>
+                                                                    </h3>
+                                                                    <p class="fn_desc">我建議您通過合法、可持續、有機的SEO技術來優化您的網站並提高您在搜索引擎結果中的排名。包括為用戶提供有用、高質量的內容，使用關鍵字研究、內部鏈接和元素優化等方法</p>
+                                                                </div>
+                                                                <div class="xoxo_fn_ccategories" id="div_1"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="featured_post_item widget_block">
+                                                        <div class="wid-title">
+                                                            <span class="text">重點語錄</span>
+                                                            <span class="icon"></span>
+                                                        </div>
+                                                        <div class="fp_content">
+                                                            <ul>
+                                                                <li>
+                                                                    <div class="fp__item"><span class="fp_count"><span>01</span></span>
+                                                                        <h4>網站速度是谷歌SEO排名的重要指標之一</h4>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="fp__item"><span class="fp_count"><span>02</span></span>
+                                                                        <h4>創建高質量內容對於谷歌SEO來說非常重要</h4>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="fp__item"><span class="fp_count"><span>03</span></span>
+                                                                        <h4>做網站不是大雜燴，內容越多越好！</h4>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="fp__item"><span class="fp_count"><span>04</span></span>
+                                                                        <h4>設計一個吸引用戶的網站，才能真正的取得用戶的信任（包括您的產品和觀點）</h4>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="fp__item"><span class="fp_count"><span>05</span></span>
+                                                                        <h4>有價值的內容才是王道</h4>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="fp__item"><span class="fp_count"><span>06</span></span>
+                                                                        <h4>吸引人的標題是非常有助於SEO優化的</h4>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="widget_block clear widget_tag_cloud">
+                                                        <div>
+                                                            <div class="wid-title">
+                                                                <span class="text">標籤</span>
+                                                                <span class="icon"></span>
+                                                            </div>
+                                                            <div class="tagcloud">
+                                                                <a href="https://hk.seoset.cc">谷歌優化</a>
+                                                                <a href="https://hk.seoset.cc">谷歌seo教程</a>
+                                                                <a href="https://hk.seoset.cc/what-is-google-seo.html">谷歌seo是什麼</a>
+                                                                <a href="https://hk.seoset.cc">谷歌seo優化</a>
+                                                                <a href="https://hk.seoset.cc/what-is-seo-optimization-tool.html">谷歌seo工具</a>
+                                                                <a href="https://hk.seoset.cc">Google SEO</a>
+                                                                <a href="https://hk.seoset.cc">谷歌seo推廣</a>
+                                                                <a href="https://hk.seoset.cc">谷歌seo公司</a>
+                                                                <a href="https://hk.seoset.cc">谷歌seo</a>
+                                                                <a href="https://hk.seoset.cc">谷歌推廣</a>
+                                                                <a href="https://hk.seoset.cc">谷歌seo怎麼做</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="clearfix"></div>
+
+    </div>
+    <!--================= Standard Post Section End =================-->
+
+    <!--================= Footer Area Start Here =================-->
+    <!--================= Footer Area Start =================-->
+    <footer id="xoxo_fn_footer">
+        <div class="xoxo_fn_footer">
+            <div class="footer_bottom">
+                <div class="container">
+                    <div class="footer_btm_in">
+                        <span class="wing_left"></span>
+                        <span class="wing_right"></span>
+                        <div class="footer_copyright">
+                            <p> © 2023 <a href="https://hk.seoset.cc" target="_blank">Seoset</a>, All Rights Reserved. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--================= Footer Area End =================-->
+    <!--================= Footer Area End Here =================-->
+
+    <!--================= Script Start Here =================-->
+    <!--================= Mouse Effect Start =================-->
+    <div class="frenify-cursor cursor-outer" data-default="yes" data-link="yes" data-slider="no" style="visibility: visible; transform: translate(1591px, 538px);"><span class="fn-cursor"></span></div>
+    <div class="frenify-cursor cursor-inner" data-default="yes" data-link="yes" data-slider="no" style="visibility: visible; transform: translate(360px, 544px);"><span class="fn-cursor"><span class="fn-left"></span><span class="fn-right"></span></span>
+    </div>
+    <div class="loader-wrapper">
+        <div class="loader">
+        </div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <!--================= Mouse Effect Start =================-->
+
+
+    <!--================= Scroll to Top Start =================-->
+    <a class="xoxo_fn_totop active">
+        <span class="progress_wrapper">
+        <span class="progress" style="height: 91.8187%;"></span>
+        </span>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewbox="0 0 557.97 1061" style="enable-background:new 0 0 557.97 1061;" xml:space="preserve" class="fn__svg  replaced-svg">
+            <path d="M557.97,554.2c0,4.13,0,8.26,0,12.39c-0.37,2.83-0.75,5.66-1.11,8.49c-2.47,19.12-10.14,35.74-23.81,49.46  c-1.02,1.02-2.42,1.87-3.79,2.31c-8.96,2.89-18.12,3.28-27.38,1.91c-13.68-2.03-26.18-7.3-38.1-14.08  c-21.62-12.31-40.29-28.39-57.82-45.86c-28.44-28.34-53.31-59.63-76.03-92.68c-0.61-0.89-1.29-1.73-2.3-3.08  c-0.1,1.2-0.17,1.63-0.17,2.06c0.03,32.31-0.98,64.6-3.29,96.83c-1.56,21.73-3.32,43.46-5.57,65.13  c-2.71,26.12-6.58,52.09-11.66,77.88c-6.4,32.52-15.07,64.34-28.3,94.82c-22.74,52.42-51.12,101.67-83.67,148.55  c-17.42,25.09-35.96,49.32-57.81,70.77c-14.1,13.84-28.57,27.36-48.82,31.92c-1.97,0-3.95,0-5.92,0c-3.98-1.33-7.87-2.73-10.95-5.86  c-5.86-5.95-8.47-13.2-8.88-21.34c-0.68-13.44,2.95-26.11,7.27-38.6c7.44-21.55,17.29-42.09,27.01-62.67  c14.89-31.52,29.92-62.97,43.1-95.26c17.4-42.65,30.2-86.59,37.18-132.14c3.19-20.81,5.97-41.71,8.22-62.64  c2.09-19.52,3.54-39.12,4.7-58.73c1.05-17.73,1.42-35.5,1.92-53.26c0.95-34.02,0.14-68.02-1.36-102c-0.16-3.52-0.46-7.03-0.7-10.54  c-1.06,0.87-1.57,1.78-2.04,2.72c-18.76,36.7-39.4,72.27-63.39,105.83c-13.17,18.43-27.28,36.08-44.08,51.41  c-9.45,8.62-19.55,16.34-31.6,21.09c-7.23,2.86-14.69,4.16-22.4,2.77c-13.71-2.47-20.98-11.51-24.1-24.42  c-1.07-4.42-1.54-8.97-2.29-13.47c0-4.49,0-8.98,0-13.46c0.18-0.86,0.42-1.72,0.53-2.59c1.04-8.27,1.79-16.58,3.14-24.79  c3.57-21.68,9.15-42.91,15.05-64.05c9.97-35.71,20.36-71.3,30.05-107.09c9.64-35.6,17.21-71.58,18.86-108.63  c1.27-28.54,0.95-57.05,0.09-85.58c-0.86-28.33-2.7-56.65-1.36-85.02c0.56-11.84,1.68-23.63,4.84-35.09  C75.99,20.25,84.24,5.72,102.87,0c1.8,0,3.59,0,5.39,0c5.02,1.57,10.2,2.77,15.04,4.79c10.07,4.19,19.11,10.23,27.92,16.58  c22.42,16.14,42.81,34.66,62.61,53.83c49.96,48.37,96.11,100.26,141.08,153.24c9.64,11.35,18.66,23.27,28.83,34.13  c38.53,41.13,74.39,84.4,106,131.1c19.59,28.93,37.26,58.96,50.61,91.35c7.53,18.28,13.53,37.01,16.13,56.7  C557.02,545.87,557.47,550.04,557.97,554.2z">
+            </path>
+        </svg>
+    </a>
+    <!--================= Scroll to Top End =================-->
+
+
+
+    <!--================= jquery lastest version =================-->
+    <script src="static/js/jquery.min.js"></script>
+    <!--================= Isotop JS =================-->
+    <script src="static/js/isotope.js"></script>
+    <!--================= Magnific Popup JS =================-->
+    <script src="static/js/magnific.popup.js"></script>
+    <!--================= Modernizr JS =================-->
+    <script src="static/js/modernizr.custom.js"></script>
+    <!--================= Swiper JS =================-->
+    <script src="static/js/swiper.js"></script>
+    <!--================= Main JS =================-->
+    <script src="static/js/main.js"></script>
+    <!--================= Script End Here =================-->
+</body>
+
+</html>
