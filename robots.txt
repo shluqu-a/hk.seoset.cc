@@ -1,3 +1,4 @@
 User-agent: *
 Disallow: google-seo.pdf
+Disallow: 202333876581924213566403.pdf
 Sitemap: https://hk.seoset.cc/sitemap.xml
